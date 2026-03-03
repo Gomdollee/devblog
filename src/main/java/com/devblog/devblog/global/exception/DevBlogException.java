@@ -11,7 +11,7 @@ public class DevBlogException extends RuntimeException{
         this.errorCode = errorCode;
     }
 
-    public DevBlogException(ErrorCode errorCode, String message, ErrorCode errorCode1) {
-        this.errorCode = errorCode1;
+    public DevBlogException(ErrorCode errorCode, String message) {
+        this.errorCode = errorCode;
     }
 }
