@@ -1,0 +1,18 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: devblog-mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root1234
+      MYSQL_DATABASE: devblog
+      MYSQL_USER: devblog
+      MYSQL_PASSWORD: devblog1234
+      TZ: Asia/Seoul
+    command: ["--character-set-server=utf8mb4", "--collation-server=utf8mb4_0900_ai_ci"]
+    volumes:
+      - devblog_mysql:/var/lib/mysql
+
+volumes:
+  devblog_mysql:
