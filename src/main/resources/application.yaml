@@ -19,3 +19,9 @@ spring:
 logging:
   level:
     org.hibernate.SQL: debug
+
+
+app:
+  jwt:
+    secret: "zFbbERPa2m+tn4OsdiiN040Nytz+0KxBIZrFRZnhGF2xVrxczoZJHESW47enqj5xsVThXsgI9ney18sfuLLTOQ=="
+    expiration-seconds: 3600
