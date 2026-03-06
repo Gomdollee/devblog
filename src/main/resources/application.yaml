@@ -23,5 +23,5 @@ logging:
 
 app:
   jwt:
-    secret: "zFbbERPa2m+tn4OsdiiN040Nytz+0KxBIZrFRZnhGF2xVrxczoZJHESW47enqj5xsVThXsgI9ney18sfuLLTOQ=="
+    secret: "ee19e6660a0ac7d9378d8355673b04a8165a9b66d22f48af8708f0258fa1d6593fb7abbd65941749c99d58ee14b6468d815b285e28fee2fa2924883f5fa553fb"
     expiration-seconds: 3600
