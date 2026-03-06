@@ -1,5 +1,7 @@
 package com.devblog.devblog.auth.controller;
 
+import com.devblog.devblog.auth.dto.LoginRequest;
+import com.devblog.devblog.auth.dto.LoginResponse;
 import com.devblog.devblog.auth.dto.RegisterRequest;
 import com.devblog.devblog.auth.dto.RegisterResponse;
 import com.devblog.devblog.auth.service.AuthService;
@@ -22,5 +24,11 @@ public class AuthController {
             @RequestBody RegisterRequest request
             ) {
         return ApiResponse.success(authService.register(request));
+    }
+
+    @PostMapping("/login")
+    public ApiResponse<LoginResponse> login(@RequestBody LoginRequest request) {
+
+        return ApiResponse.success(authService.login(request));
     }
 }
